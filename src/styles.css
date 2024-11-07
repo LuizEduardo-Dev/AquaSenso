@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos gerais */
+html, body {
+        height: 100%; /* Garante que o html e o body ocupem a altura total da janela */
+        margin: 0; /* Remove as margens padrão */
+        padding: 0;
+    }
+
+body {
+    background-color: #0b2183;
+}
+
+/* Navegação */
+nav {
+    width: 100%;
+    background-color: #0a3e68;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.content {
+    padding: 20px;
+    text-align: center;
+    margin: 0 15%; /* Margem lateral para deixar espaço para as barras laterais */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    background-color: #0538c4;
+    min-height: calc(100vh - 150px); /* Garante que o conteúdo principal ocupe o espaço restante até o rodapé */
+    box-shadow: 0 4px 8px rgba(19, 73, 175, 0.1);
+}
+
+.content img{
+    max-width: 100%; /* Garante que a imagem ocupe o máximo de largura disponível dentro da .content */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Borda arredondada para combinar com o estilo do conteúdo */
+    box-shadow: 0 4px 8px rgba(19, 73, 175, 0.1); /* Sombra para dar profundidade */
+    margin: 20px 0; /* Espaço entre a imagem e outros elementos */
+}
+/* Rodapé */
+footer {
+    background-color: #0a3e68;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Garante que o rodapé fique no final do conteúdo */
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+}
+
+.formTexto {
+    background-color: #04355e; /* Fundo branco com transparência */
+    color: white;
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px 0; /* Margem superior e inferior */
+    box-shadow: 0 4px 8px #2532e91a; /* Sombra para efeito de profundidade */
+    backdrop-filter: blur(5px); /* Desfoque do fundo, se desejar */
+}
+

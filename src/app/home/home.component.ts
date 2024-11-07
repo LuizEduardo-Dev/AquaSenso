@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-home',
   standalone: true,
   imports: [RouterOutlet, RouterLink],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-  title = 'AquaSenso';
+export class HomeComponent {
+
 }

@@ -1,0 +1,9 @@
+formTexto {
+    background-color: #04355e; /* Fundo branco com transparência */
+    color: white;
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px 0; /* Margem superior e inferior */
+    box-shadow: 0 4px 8px #2532e91a; /* Sombra para efeito de profundidade */
+    backdrop-filter: blur(5px); /* Desfoque do fundo, se desejar */
+}

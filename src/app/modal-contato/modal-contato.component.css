@@ -1,0 +1,134 @@
+/* The Modal (background) */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgb(26, 9, 153);
+  color: white;
+  width: 40vw;
+  height: 60vh;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px #0758ee4d;
+  text-align: center;
+  position: relative;
+  overflow-y: auto; /* Permite rolagem caso o conteúdo seja grande */
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre os campos */
+  align-items: center; /* Alinha todos os campos ao centro */
+}
+
+/* Form Field Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 90%; /* Largura dos campos */
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #095491;
+  background-color: rgb(6, 42, 109);
+  color: white;
+  font-size: 16px;
+}
+
+.form-group input {
+  height: 40px; /* Definir altura para inputs */
+}
+
+textarea {
+  height: 120px; /* Ajuste no tamanho do textarea */
+  resize: none; /* Impede o redimensionamento */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.close:hover, .close:focus {
+  color: red;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+  margin-top: 20px; /* Espaçamento acima do botão */
+  padding-bottom: 20px;
+}
+
+.fale-conosco-button {
+  position: top;
+  bottom: 5px;
+  background-color: #084a91;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 0; /* Para garantir que o botão fique acima de outros elementos */
+}
+/* Submit Button */
+button {
+  background-color: #084a91;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  
+}
+
+button:hover {
+  background-color: #4CAF50; /* Altera a cor ao passar o mouse */
+  color: white;
+}
+
+/* Custom Button for Submit */
+.btn-enviar {
+  background-color: #4CAF50;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #45a049;
+}

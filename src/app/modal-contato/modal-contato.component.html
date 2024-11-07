@@ -1,0 +1,40 @@
+<main class="content">
+    <h1 class="formTexto">Quer fazer parte da nossa equipe? </h1>
+    <p class="formTexto">Quer ajudar a economizar mais água? Ao entrar em contato, você não só compartilha suas ideias, mas também contribui diretamente para soluções criativas que podem impactar positivamente a nossa comunidade. Não perca a chance de ser parte da mudança!</p>
+
+    <div class="button-container">
+        <button class="fale-conosco-button" (click)="openModal()">Fale Conosco</button>
+    </div>
+
+
+    <!-- Modal de contato -->
+    <div class="modal" *ngIf="isVisible" (click)="closeModal()">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+            <h2>Contato</h2>
+            <form (ngSubmit)="submitFeedback()">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" [(ngModel)]="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" [(ngModel)]="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" [(ngModel)]="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea [(ngModel)]="feedbackContent" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <img src="https://www.jscacavazamentos.com.br/wp-content/uploads/2022/03/20171017185927179894e-930x620.jpg.webp"  class="contentimg">
+</main>
