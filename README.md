@@ -1,2 +1,2 @@
 # AquaSenso
-spa do projeto AquaSenso da UPX
+Single Page Aplication do projeto AquaSenso da UPX
